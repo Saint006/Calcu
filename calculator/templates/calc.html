@@ -1,0 +1,44 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+<body>
+  <h1>Calculator</h1>
+  <div>
+    <form method="POST">
+      {% csrf_token %}
+      <input
+        type="text"
+        id="display"
+        name="display"
+        value="{{ result }}"
+        readonly
+      />
+      <button type="submit" name="operation" value="del">Del</button>
+      <br />
+      <button type="submit" name="operation" value="1">1</button>
+      <button type="submit" name="operation" value="2">2</button>
+      <button type="submit" name="operation" value="3">3</button>
+      <button type="submit" name="operation" value="+">+</button>
+      <br />
+      <button type="submit" name="operation" value="4">4</button>
+      <button type="submit" name="operation" value="5">5</button>
+      <button type="submit" name="operation" value="6">6</button>
+      <button type="submit" name="operation" value="-">-</button>
+      <br />
+      <button type="submit" name="operation" value="7">7</button>
+      <button type="submit" name="operation" value="8">8</button>
+      <button type="submit" name="operation" value="9">9</button>
+      <button type="submit" name="operation" value="*">*</button>
+      <br />
+      <button type="submit" name="operation" value="=">=</button>
+      <button type="submit" name="operation" value="/">/</button>
+      <button type="submit" name="operation" value=".">.</button>
+      <button type="submit" name="operation" value="0">0</button>
+      <!-- Add more buttons here -->
+
+      <br />
+      <button type="submit" name="operation" value="clear">clear</button>
+
+      <!-- Equals button -->
+    </form>
+  </div>
+</body>

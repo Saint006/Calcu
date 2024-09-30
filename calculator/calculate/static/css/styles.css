@@ -1,0 +1,23 @@
+body {
+  background-color: #e13737;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+
+div {
+  display: inline-flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  border: 2px solid black;
+}
